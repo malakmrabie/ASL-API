@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: asl-api
-    env: python
-    buildCommand: |
-      pip install -r requirements.txt
-      python -m spacy download en_core_web_sm
-    startCommand: uvicorn trans_API:app --host 0.0.0.0 --port 10000
